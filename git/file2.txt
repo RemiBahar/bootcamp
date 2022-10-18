@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+file2
+ednejdne
+=======
+>>>>>>> parent of 75a7c3b (Adding file text)
