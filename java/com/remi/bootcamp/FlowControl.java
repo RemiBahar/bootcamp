@@ -1,4 +1,9 @@
+package com.remi.bootcamp;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class FlowControl {
 	public static double addMultiply(double firstNum, double secondNum, boolean bool) {
@@ -48,6 +53,32 @@ public class FlowControl {
 		}
 	}
 	
+	public static int uniqueSum(List<Integer> nums) {
+		 Map<Integer, Integer> map= new HashMap<Integer, Integer>();  
+		 int sum = 0;
+		 
+		 for(int i=0; i < nums.size(); i++) {
+			 if(!map.containsKey(nums.get(i))) {
+				sum += nums.get(i);
+				map.put(nums.get(i), i);
+			 }
+		 }
+		
+		return sum;
+	}
+	
+	public static String fizzBuzz(int num) {
+		if(num % 3 == 0 && num % 5 == 0) {
+			return "FizzBuzz";
+		} else if(num % 3 == 0) {
+			return "Fizz";
+		} else if(num % 5 == 0) {
+			return "Buzz";
+		} else {
+			return String.valueOf(num);
+		}
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(addMultiply(2.6, 1.4, true));
@@ -57,7 +88,10 @@ public class FlowControl {
 		
 		System.out.println("Blackjack: " + Blackjack.play(1, 22));
 		
+        List<Integer> nums = Arrays.asList(1, 5, 3); 
+		System.out.println("sum: " + uniqueSum(nums));
 		
+		System.out.println(fizzBuzz(7));
 	}
 
 }

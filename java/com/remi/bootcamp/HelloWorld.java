@@ -1,3 +1,5 @@
+package com.remi.bootcamp;
+
 public class HelloWorld {
 	// Every program requires an entry point called main
 	

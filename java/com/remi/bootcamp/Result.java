@@ -1,3 +1,5 @@
+package com.remi.bootcamp;
+
 public class Result {
 	// Fields
 	int physics;

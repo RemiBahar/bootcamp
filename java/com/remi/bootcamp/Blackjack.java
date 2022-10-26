@@ -1,4 +1,4 @@
-
+package com.remi.bootcamp;
 
 import java.util.Scanner;
 

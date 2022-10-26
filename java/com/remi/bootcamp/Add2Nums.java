@@ -1,4 +1,4 @@
-
+package com.remi.bootcamp;
 public class Add2Nums {
 	
 	public static double add(double a, double b) {
